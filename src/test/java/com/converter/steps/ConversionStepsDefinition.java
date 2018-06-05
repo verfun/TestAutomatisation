@@ -29,8 +29,8 @@ public class ConversionStepsDefinition {
 
 	@When("^I input the value of (\\d+)\\.(\\d+) in text box$")
 	public void i_input_the_value_of_in_text_box(int arg1, int arg2) throws Throwable {
-	    WebElement inputTemperatureCelisius = driver.findElement(By.cssSelector("input"));
-	    inputTemperatureCelisius.sendKeys("37");
+//	    WebElement inputTemperatureCelisius = driver.findElement(By.cssSelector("input"));
+//	    inputTemperatureCelisius.sendKeys("37");
 	}
 
 	@Then("^It should be converted to celsius to (\\d+) dgree$")
