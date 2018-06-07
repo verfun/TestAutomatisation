@@ -7,7 +7,7 @@ import cucumber.api.junit.Cucumber;
 
 
 @RunWith(Cucumber.class)
-@CucumberOptions(format = {"pretty","html:target/cucumber"},features = {"src/test/java/com/converter/resources/conversion.feature"})
+@CucumberOptions(plugin = {"pretty","html:target/cucumber"},features = {"src/test/java/com/converter/resources/conversion.feature"})
 public class RunCuckesTest {
 
 }

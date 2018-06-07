@@ -1,9 +1,17 @@
 Feature: Convert temperature
 
-Scenario: Convert to Celsius from Fahrenheit
+Scenario: Convert to Fahrenheit from Celsius
 
-	Given I wantt to convert 98.6 degree toFahrenheit
+	Given I wan to convert 37 degree to Fahrenheit
 	
-	When I input the value of 98.6 in text box
+	When I input the value of 37 in text box
 	
-	Then It should be converted to celsius to 37 dgree
+	Then It should be display 98.6 degree Fahrenheit
+
+Scenario: Add a new user
+
+	Given I to add a new user
+	
+	When I input the user data
+	
+	Then It add to my list of users
