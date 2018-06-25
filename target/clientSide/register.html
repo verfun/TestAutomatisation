@@ -1,0 +1,61 @@
+
+<h1>Enrollment Page</h1>
+<div class="col-md-6 ">
+    <div class="col-6 col-md-12 container">
+  <form ng-model="newUser">
+  <div class="form-group">
+    <label for="exampleInputFName">First name</label>
+    <input ng-model="newUser.fname" type="text" class="form-control" id="exampleInputFName" aria-describedby="emailHelp" placeholder="Enter your first name">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputLName">Last name</label>
+    <input ng-model="newUser.lname" type="text" class="form-control" id="exampleInputLName" aria-describedby="emailHelp" placeholder="Enter your last name">
+  </div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input ng-model="newUser.email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>  
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input ng-model="newUser.password" type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+  </div>
+  <button type="submit" id="button" ng-click="addUser(newUser)" class="btn btn-primary">Submit</button>
+</form>
+        We Have =====================================> <span ng-model="numberOfUsers" id="nbrUsers">{{numberOfUsers}}</span> Users
+    <br>
+       <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">First</th>
+          <th scope="col">Last</th>
+          <th scope="col">Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr ng-repeat="user in users">
+          <th scope="row">{{user.getIndex}}</th>
+          <td>{{user.fname}}</td>
+          <td>{{user.lname}}</td>
+          <td>{{user.email}}</td>
+        </tr>
+      </tbody>
+    </table> 
+    </div>
+</div>
+<div class="col-md-6 ">
+    
+    <form>
+        <fieldset>
+        <legend>
+          <div class="form-group">
+            <label for="temperature">Enter temperature in Celesius</label>
+            <input ng-model="temperature" type="number" class="form-control" id="temperature" placeholder="temperature in Celesius">
+          </div>
+          <button type="submit" ng-click="converter(temperature)" id="converter" class="btn btn-primary"> Convert To Fahrenheit</button>
+          <p ng-model="resultTempFahrenheit" id="resultTemperature">{{resultTempFahrenheit}}</p> Fahrenheit
+        </legend>
+    </fieldset>
+    </form>
+</div>

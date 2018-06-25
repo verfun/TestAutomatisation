@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Test Automatisation</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="http://code.angularjs.org/1.2.13/angular.js"></script>
+    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+    <script src="./app/app.js"></script>
+
+</head>
+<nav class="navbar navbar-default">
+   <div class="container-fluid">
+     <div class="navbar-header">
+         <a class="navbar-brand">
+          <img src="images/Capgemini_Logo_Black_Mono_RGB.svg" height="50" />
+        </a>
+    </div>
+       <ul class="nav navbar-nav navbar-right">
+             <li><a ui-sref="home"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a ui-sref="signIn" ><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+   </div>
+ </nav>    
+    
+<body ng-app="routerApp" >
+
+ <div ui-view></div>
+</body>
+</html>
