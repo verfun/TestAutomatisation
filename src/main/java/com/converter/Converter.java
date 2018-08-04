@@ -15,5 +15,9 @@ public class Converter {
 		double result = celesiusDegree * 1.8 + 32;
 		return Double.parseDouble(fixDigits(result));
 	}
+	public static double convertToCelesius(double fahrenheitDegree) {
+		double result = (fahrenheit - 32) / 1.8;
+		return Double.parseDouble(fixDigits(result));
+	}
 
 }
